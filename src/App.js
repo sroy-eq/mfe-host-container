@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import React, { useState } from 'react';
+// import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+// import { createBrowserHistory } from 'history';
+import React, { Suspense } from 'react';
 import './App.css';
+
+
+const Cats = React.lazy(() => import("cats/App"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Host Container</h1>
+      <h2>Random Cats</h2>
+      <hr />
+      <Suspense fallback={'Loading Cats'}>
+        <Cats />
+      </Suspense>
+
+
     </div>
   );
 }
