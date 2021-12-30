@@ -15,4 +15,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Micro-frontend Remotes
-This host container is configured to consume remote MFE application `mfe-remote-cats`. See `modulefederation.config.js` file in this repo to see the configuration. You can create other remote MFE application and change the modulefederation config file. See the corresponding modulefederation config file in the mfe-remote-cats application.
+This host container is configured to consume remote MFE application [`mfe-remote-cats`](https://github.com/sroy-eq/mfe-remote-cats). See `modulefederation.config.js` file in this repo to see the configuration. You can create other remote MFE application and change the modulefederation config file. See the corresponding modulefederation config file in the mfe-remote-cats application.
